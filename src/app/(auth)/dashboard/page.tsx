@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const Dashboard = () => (
-  <div className="content">
+  <div className='content'>
     <Hello />
   </div>
 );

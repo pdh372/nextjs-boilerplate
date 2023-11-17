@@ -8,155 +8,150 @@ const Index = () => (
   <Main
     meta={
       <Meta
-        title="Next.js Boilerplate Presentation"
-        description="Next js Boilerplate is the perfect starter code for your project. Build your React application with the Next.js framework."
+        title='Next.js Boilerplate Presentation'
+        description='Next js Boilerplate is the perfect starter code for your project. Build your React application with the Next.js framework.'
       />
     }
   >
-    <a href="https://github.com/ixartz/Next-js-Boilerplate">
+    <a href='https://github.com/ixartz/Next-js-Boilerplate'>
       <Image
-        src="/assets/images/nextjs-starter-banner.png"
-        alt="Nextjs starter banner"
+        src='/assets/images/nextjs-starter-banner.png'
+        alt='Nextjs starter banner'
         width={600}
         height={315}
       />
     </a>
-    <h2 className="mt-5 text-2xl font-bold">Sponsors</h2>
+    <h2 className='mt-5 text-2xl font-bold'>Sponsors</h2>
     <Sponsors />
-    <h2 className="mt-5 text-2xl font-bold">
+    <h2 className='mt-5 text-2xl font-bold'>
       Boilerplate code for your Nextjs project with Tailwind CSS
     </h2>
     <p>
-      <span role="img" aria-label="rocket">
+      <span role='img' aria-label='rocket'>
         🚀
       </span>{' '}
-      Next.js Boilerplate is a starter code for your Next js project by putting
-      developer experience first .{' '}
-      <span role="img" aria-label="zap">
+      Next.js Boilerplate is a starter code for your Next js project by putting developer experience
+      first .{' '}
+      <span role='img' aria-label='zap'>
         ⚡️
       </span>{' '}
-      Made with Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged,
-      VSCode, Netlify, PostCSS, Tailwind CSS, Authentication with Clerk,
-      Database with DrizzleORM (SQLite, PostgreSQL, and MySQL) and Turso.
+      Made with Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, VSCode, Netlify, PostCSS,
+      Tailwind CSS, Authentication with Clerk, Database with DrizzleORM (SQLite, PostgreSQL, and
+      MySQL) and Turso.
     </p>
-    <h3 className="text-lg font-semibold">Next js Boilerplate Features</h3>
+    <h3 className='text-lg font-semibold'>Next js Boilerplate Features</h3>
     <p>Developer experience first:</p>
     <ul>
       <li>
-        <span role="img" aria-label="fire">
+        <span role='img' aria-label='fire'>
           🔥
         </span>{' '}
-        <a href="https://nextjs.org" rel="nofollow">
+        <a href='https://nextjs.org' rel='nofollow'>
           Next.js
         </a>{' '}
         for Static Site Generator
       </li>
       <li>
-        <span role="img" aria-label="art">
+        <span role='img' aria-label='art'>
           🎨
         </span>{' '}
         Integrate with{' '}
-        <a href="https://tailwindcss.com" rel="nofollow">
+        <a href='https://tailwindcss.com' rel='nofollow'>
           Tailwind CSS
         </a>
       </li>
       <li>
-        <span role="img" aria-label="nail_care">
+        <span role='img' aria-label='nail_care'>
           💅
         </span>{' '}
         PostCSS for processing Tailwind CSS
       </li>
       <li>
-        <span role="img" aria-label="tada">
+        <span role='img' aria-label='tada'>
           🎉
         </span>{' '}
         Type checking Typescript
       </li>
       <li>
-        <span role="img" aria-label="pencil2">
+        <span role='img' aria-label='pencil2'>
           ✏️
         </span>{' '}
         Linter with{' '}
-        <a href="https://eslint.org" rel="nofollow">
+        <a href='https://eslint.org' rel='nofollow'>
           ESLint
         </a>
       </li>
       <li>
-        <span role="img" aria-label="hammer_and_wrench">
+        <span role='img' aria-label='hammer_and_wrench'>
           🛠
         </span>{' '}
         Code Formatter with{' '}
-        <a href="https://prettier.io" rel="nofollow">
+        <a href='https://prettier.io' rel='nofollow'>
           Prettier
         </a>
       </li>
       <li>
-        <span role="img" aria-label="fox_face">
+        <span role='img' aria-label='fox_face'>
           🦊
         </span>{' '}
         Husky for Git Hooks
       </li>
       <li>
-        <span role="img" aria-label="no_entry_sign">
+        <span role='img' aria-label='no_entry_sign'>
           🚫
         </span>{' '}
         Lint-staged for running linters on Git staged files
       </li>
       <li>
-        <span role="img" aria-label="lock">
+        <span role='img' aria-label='lock'>
           🔒
         </span>{' '}
         Authentication with{' '}
-        <a href="https://clerk.com?utm_source=github&utm_medium=sponsorship&utm_campaign=nextjs-boilerplate">
+        <a href='https://clerk.com?utm_source=github&utm_medium=sponsorship&utm_campaign=nextjs-boilerplate'>
           Clerk
         </a>
       </li>
       <li>
-        <span role="img" aria-label="package">
+        <span role='img' aria-label='package'>
           📦
         </span>{' '}
-        Type-safe ORM with DrizzleORM, compatible with SQLite, PostgreSQL, and
-        MySQL
+        Type-safe ORM with DrizzleORM, compatible with SQLite, PostgreSQL, and MySQL
       </li>
       <li>
-        <span role="img" aria-label="computer_disk">
+        <span role='img' aria-label='computer_disk'>
           💽
         </span>{' '}
-        Global Database with{' '}
-        <a href="https://turso.tech/?utm_source=nextjsstarterbp">Turso</a>
+        Global Database with <a href='https://turso.tech/?utm_source=nextjsstarterbp'>Turso</a>
       </li>
       <li>
-        <span role="img" aria-label="no_entry_sign">
+        <span role='img' aria-label='no_entry_sign'>
           🗂
         </span>{' '}
-        VSCode configuration: Debug, Settings, Tasks and extension for PostCSS,
-        ESLint, Prettier, TypeScript
+        VSCode configuration: Debug, Settings, Tasks and extension for PostCSS, ESLint, Prettier,
+        TypeScript
       </li>
       <li>
-        <span role="img" aria-label="robot">
+        <span role='img' aria-label='robot'>
           🤖
         </span>{' '}
         SEO metadata, JSON-LD and Open Graph tags with Next SEO
       </li>
       <li>
-        <span role="img" aria-label="robot">
+        <span role='img' aria-label='robot'>
           ⚙️
         </span>{' '}
-        <a
-          href="https://www.npmjs.com/package/@next/bundle-analyzer"
-          rel="nofollow"
-        >
+        <a href='https://www.npmjs.com/package/@next/bundle-analyzer' rel='nofollow'>
           Bundler Analyzer
         </a>
       </li>
       <li>
-        <span role="img" aria-label="rainbow">
+        <span role='img' aria-label='rainbow'>
           🌈
         </span>{' '}
         Include a FREE minimalist theme
       </li>
       <li>
-        <span role="img" aria-label="hundred">
+        <span role='img' aria-label='hundred'>
           💯
         </span>{' '}
         Maximize lighthouse score
@@ -165,30 +160,30 @@ const Index = () => (
     <p>Built-in feature from Next.js:</p>
     <ul>
       <li>
-        <span role="img" aria-label="coffee">
+        <span role='img' aria-label='coffee'>
           ☕
         </span>{' '}
         Minify HTML &amp; CSS
       </li>
       <li>
-        <span role="img" aria-label="dash">
+        <span role='img' aria-label='dash'>
           💨
         </span>{' '}
         Live reload
       </li>
       <li>
-        <span role="img" aria-label="white_check_mark">
+        <span role='img' aria-label='white_check_mark'>
           ✅
         </span>{' '}
         Cache busting
       </li>
     </ul>
-    <h3 className="text-lg font-semibold">Our Starter code Philosophy</h3>
+    <h3 className='text-lg font-semibold'>Our Starter code Philosophy</h3>
     <ul>
       <li>Minimal code</li>
       <li>SEO-friendly</li>
       <li>
-        <span role="img" aria-label="rocket">
+        <span role='img' aria-label='rocket'>
           🚀
         </span>{' '}
         Production-ready
@@ -196,10 +191,7 @@ const Index = () => (
     </ul>
     <p>
       Check our GitHub project for more information about{' '}
-      <a href="https://github.com/ixartz/Next-js-Boilerplate">
-        Nextjs Boilerplate
-      </a>
-      .
+      <a href='https://github.com/ixartz/Next-js-Boilerplate'>Nextjs Boilerplate</a>.
     </p>
   </Main>
 );

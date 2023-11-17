@@ -32,11 +32,15 @@ export default function RootLayout({
   // This will be populated with nested layouts or pages
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode,
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang='en'>
+      <body className='bg-black'>
+        <div className='mx-auto min-h-screen max-w-full bg-white text-sm sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl'>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
