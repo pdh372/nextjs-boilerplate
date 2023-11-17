@@ -13,5 +13,6 @@ export const db = drizzle(client);
 
 // Disable migrate function if using Edge runtime for local environment and use `drizzle-kit push` instead
 if (process.env.NODE_ENV !== 'production') {
+  // eslint-disable-next-line prettier/prettier
   await migrate(db, { migrationsFolder: './migrations' });
 }
