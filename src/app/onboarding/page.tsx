@@ -1,14 +1,26 @@
-import type { Metadata } from 'next';
+'use client';
+
 import Image from 'next/image';
+import { useState } from 'react';
+import { OnboardingLayout } from "@/layouts/onboarding.layout";
 
-export const metadata: Metadata = {
-  title: 'Onboarding',
-  description: 'An example of CRUD operation',
-};
+const Onboarding =  () => {
+  const [pages] = useState([
+    {
+      skip: 'light',
+    },
+    {
+      skip: 'light',
+    },
+  ]);
 
-const Onboarding = async () => {
+  // const [currentPage, setCurrent] = useState(0)
+
   return (
-    <main className=''>
+    {pages.map((page, order) => 
+
+      <OnboardingLayout skip={page.skip} order={order}>
+      <main className=''>
       <div className='flex flex-row-reverse px-4 py-12'>
         <button
           type='button'
@@ -34,7 +46,11 @@ const Onboarding = async () => {
       </div>
 
       <div>123</div>
-    </main>
+      </main>
+      </OnboardingLayout>
+    )}
+
+    
   );
 };
 
