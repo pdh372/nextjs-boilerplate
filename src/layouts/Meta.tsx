@@ -4,9 +4,9 @@ import { NextSeo } from 'next-seo';
 import { AppConfig } from '@/utils/AppConfig';
 
 type IMetaProps = {
-  title: string,
-  description: string,
-  canonical?: string,
+  title: string;
+  description: string;
+  canonical?: string;
 };
 
 const Meta = (props: IMetaProps) => (
