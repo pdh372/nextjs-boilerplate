@@ -1,0 +1,1 @@
+[# Figma](https://www.figma.com/file/z6WZLfm1vssiZGx1YuB0ae/Shoplon-UI-Kit?node-id=49%3A126&mode=devhttps://github.com/user/repo/blob/branch/other_file.md)

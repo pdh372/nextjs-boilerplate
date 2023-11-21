@@ -1,6 +1,7 @@
 {
   "name": "next-js-boilerplate",
   "version": "3.26.0",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
