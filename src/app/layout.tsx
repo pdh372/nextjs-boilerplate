@@ -1,3 +1,4 @@
+import { LayoutFooter } from '../layouts/layoutFooter';
 import '../styles/global.css';
 
 import type { Metadata } from 'next';
@@ -32,14 +33,12 @@ export default function RootLayout({
   // This will be populated with nested layouts or pages
   children,
 }: {
-  children: React.ReactNode,
+  children: React.ReactNode;
 }) {
   return (
     <html lang='en'>
-      <body className='bg-black'>
-        <div className='mx-auto h-screen bg-white text-sm sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl overflow-auto'>
-          {children}
-        </div>
+      <body className='bg-deep-black-100'>
+        <LayoutFooter>{children}</LayoutFooter>
       </body>
     </html>
   );

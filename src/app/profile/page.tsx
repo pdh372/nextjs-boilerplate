@@ -62,9 +62,9 @@ const Profile = () => {
   ]);
 
   return (
-    <div className='px-10 border-4 h-full'>
+    <div className='px-10 bg-black-10'>
       {/* Shop InFo */}
-      <div className='flex flex-row justify-between pt-16 pb-12 items-center h-fit'>
+      <div className='flex flex-row justify-between pt-2 pb-12 items-center h-fit'>
         <div className='cursor-pointer'>
           <h2 className='font-semibold text-2xl'>Shoplon</h2>
         </div>
@@ -108,7 +108,7 @@ const Profile = () => {
       </div>
 
       {/* Logout */}
-      <div className='flex my-2 py-1 cursor-pointer'>
+      <div className='flex mt-2 pt-1 pb-2 cursor-pointer'>
         <div>
           <img src='/light/icons/profile_logout.png' alt='' />
         </div>
