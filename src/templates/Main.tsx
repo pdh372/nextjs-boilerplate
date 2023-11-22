@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
+import { ROUTES } from '@constants';
 
 type IMainProps = {
   meta?: ReactNode;
@@ -12,7 +13,7 @@ const Main = (props: IMainProps) => (
       <Link href={'/onboarding'}>onboarding</Link>
     </div>
     <div>
-      <Link href={'/profile'}>profile</Link>
+      <Link href={ROUTES.PROFILE}>profile</Link>
     </div>
   </div>
 );

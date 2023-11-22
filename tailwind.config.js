@@ -124,6 +124,14 @@ module.exports = {
       height: {
         ['15']: '3.75rem',
       },
+      minHeight: {
+        ['1.5']: '1.5rem',
+        ['2']: '2rem',
+      },
+      minWidth: {
+        ['1.5']: '1.5rem',
+        ['2']: '2rem',
+      },
       borderWidth: {
         1: '1px',
       },
