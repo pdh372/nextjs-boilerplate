@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Plus Jakarta Display';
-  src: url('/fonts/PlusJakartaSans-ExtraLight.tff') format('tff');
+  src: url('/fonts/PlusJakartaSans-ExtraLight.tff') format('typetrue');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Plus Jakarta Display';
-  src: url('/fonts/PlusJakartaSans-ExtraLightItalic.tff') format('tff');
+  src: url('/fonts/PlusJakartaSans-ExtraLightItalic.tff') format('typetrue');
   font-weight: 200;
   font-style: italic;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'Plus Jakarta Display';
-  src: url('/fonts/PlusJakartaSans-Light.tff') format('tff');
+  src: url('/fonts/PlusJakartaSans-Light.tff') format('typetrue');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'Plus Jakarta Display';
-  src: url('/fonts/PlusJakartaSans-LightItalic.tff') format('tff');
+  src: url('/fonts/PlusJakartaSans-LightItalic.tff') format('typetrue');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: 'Plus Jakarta Display';
-  src: url('/fonts/PlusJakartaSans-Regular.tff') format('tff');
+  src: url('/fonts/PlusJakartaSans-Regular.tff') format('typetrue');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: 'Plus Jakarta Display';
-  src: url('/fonts/PlusJakartaSans-Italic.tff') format('tff');
+  src: url('/fonts/PlusJakartaSans-Italic.tff') format('typetrue');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -48,7 +48,7 @@
 
 @font-face {
   font-family: 'Plus Jakarta Display';
-  src: url('/fonts/PlusJakartaSans-Medium.tff') format('tff');
+  src: url('/fonts/PlusJakartaSans-Medium.tff') format('typetrue');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -56,7 +56,7 @@
 
 @font-face {
   font-family: 'Plus Jakarta Display';
-  src: url('/fonts/PlusJakartaSans-MediumItalic.tff') format('tff');
+  src: url('/fonts/PlusJakartaSans-MediumItalic.tff') format('typetrue');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -64,7 +64,7 @@
 
 @font-face {
   font-family: 'Plus Jakarta Display';
-  src: url('/fonts/PlusJakartaSans-SemiBold.tff') format('tff');
+  src: url('/fonts/PlusJakartaSans-SemiBold.tff') format('typetrue');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -72,7 +72,7 @@
 
 @font-face {
   font-family: 'Plus Jakarta Display';
-  src: url('/fonts/PlusJakartaSans-SemiBoldItalic.tff') format('tff');
+  src: url('/fonts/PlusJakartaSans-SemiBoldItalic.tff') format('typetrue');
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -80,7 +80,7 @@
 
 @font-face {
   font-family: 'Plus Jakarta Display';
-  src: url('/fonts/PlusJakartaSans-Bold.tff') format('tff');
+  src: url('/fonts/PlusJakartaSans-Bold.tff') format('typetrue');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -88,7 +88,7 @@
 
 @font-face {
   font-family: 'Plus Jakarta Display';
-  src: url('/fonts/PlusJakartaSans-BoldItalic.tff') format('tff');
+  src: url('/fonts/PlusJakartaSans-BoldItalic.tff') format('typetrue');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -96,7 +96,7 @@
 
 @font-face {
   font-family: 'Plus Jakarta Display';
-  src: url('/fonts/PlusJakartaSans-Bold.tff') format('tff');
+  src: url('/fonts/PlusJakartaSans-Bold.tff') format('typetrue');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -104,7 +104,7 @@
 
 @font-face {
   font-family: 'Plus Jakarta Display';
-  src: url('/fonts/PlusJakartaSans-BoldItalic.tff') format('tff');
+  src: url('/fonts/PlusJakartaSans-BoldItalic.tff') format('typetrue');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -112,7 +112,7 @@
 
 @font-face {
   font-family: 'Plus Jakarta Display';
-  src: url('/fonts/PlusJakartaSans-ExtraBold.tff') format('tff');
+  src: url('/fonts/PlusJakartaSans-ExtraBold.tff') format('typetrue');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -120,7 +120,7 @@
 
 @font-face {
   font-family: 'Plus Jakarta Display';
-  src: url('/fonts/PlusJakartaSans-ExtraBoldItalic.tff') format('tff');
+  src: url('/fonts/PlusJakartaSans-ExtraBoldItalic.tff') format('typetrue');
   font-weight: 700;
   font-style: italic;
   font-display: swap;

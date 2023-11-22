@@ -1,4 +1,4 @@
-import '@/styles/global.css';
+import '../styles/global.css';
 
 import type { Metadata } from 'next';
 
@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className='bg-black'>
-        <div className='mx-auto min-h-screen max-w-full bg-white text-sm sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl'>
+        <div className='mx-auto h-screen bg-white text-sm sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl overflow-auto'>
           {children}
         </div>
       </body>

@@ -37,12 +37,30 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
+      "@src": [
+        "src/*"
       ],
-      "@/public/*": [
+      "@public/*": [
         "./public/*"
-      ]
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@components": [
+        "./src/components"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@utils": [
+        "./src/utils"
+      ],
+      "@helpers/*": [
+        "./src/helpers/*"
+      ],
+      "@helpers": [
+        "./src/helpers"
+      ],
     },
     "plugins": [
       {

@@ -13,7 +13,7 @@ export default bundleAnalyzer({
   },
   poweredByHeader: false,
   reactStrictMode: true,
-  webpack: (config) => {
+  webpack: config => {
     // config.externals is needed to resolve the following errors:
     // Module not found: Can't resolve 'bufferutil'
     // Module not found: Can't resolve 'utf-8-validate'

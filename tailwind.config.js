@@ -124,6 +124,9 @@ module.exports = {
       height: {
         ['15']: '3.75rem',
       },
+      borderWidth: {
+        1: '1px',
+      },
     },
   },
   plugins: [],
