@@ -1,4 +1,4 @@
-import { LayoutFooter } from '../layouts/layoutFooter';
+import { LayoutFooter } from '../layouts/footer';
 import '../styles/global.css';
 
 import type { Metadata } from 'next';
