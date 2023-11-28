@@ -2,6 +2,7 @@ import { Meta } from '../layouts/Meta';
 import { Main } from '../templates/Main';
 
 const Index = () => (
+  
   <Main
     meta={
       <Meta

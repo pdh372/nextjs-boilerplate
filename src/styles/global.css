@@ -1,25 +1,37 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html[data-theme='light'] {
+    --bg-primary: #fff;
+    --text-color-primary: #000;
+    --lower-bg: #000;
+  }
+
+  html[data-theme='dark'] {
+    --bg-primary: #000;
+    --text-color-primary: #fff;
+    --lower-bg: #fff;
+  }
+
+  html[data-theme='red'] {
+    --bg-primary: #991b1b;
+    --text-color-primary: #fff;
+  }
+
+  html[data-theme='green'] {
+    --bg-primary: #166534;
+    --text-color-primary: #fff;
+  }
+}
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-color-primary);
 }
 
-a {
-  @apply text-blue-700;
-}
-
-a:hover {
-  @apply border-b-2 border-blue-700;
-}
-
-@tailwind components;
-
-@tailwind utilities;
-
-.content p {
-  @apply my-6;
-}
-
-.content ul {
-  @apply my-6;
+.lower-bg {
+  background-color: var(--lower-bg);
 }

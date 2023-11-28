@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname, useRouter } from 'next/navigation';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { ROUTES } from '@constants';
 
 type TLayoutFooter = {
@@ -14,25 +14,25 @@ const LayoutFooter = (props: TLayoutFooter) => {
       inactivated: '/light/svg/footer_shop.svg',
       activated: '/light/svg/footer_shop_activated.svg',
       title: 'shop',
-      redirect: '/',
+      redirect: ROUTES.TEST_1,
     },
     {
       inactivated: '/light/svg/footer_discover.svg',
       activated: '/light/svg/footer_discover_activated.svg',
       title: 'Discover',
-      redirect: '/',
+      redirect: ROUTES.TEST_2,
     },
     {
       inactivated: '/light/svg/footer_bookmark.svg',
       activated: '/light/svg/footer_bookmark_activated.svg',
       title: 'Bookmark',
-      redirect: '/',
+      redirect: ROUTES.TEST_3,
     },
     {
       inactivated: '/light/svg/footer_cart.svg',
       activated: '/light/svg/footer_cart_activated.svg',
       title: 'Cart',
-      redirect: '/',
+      redirect: ROUTES.TEST_4,
     },
     {
       inactivated: '/light/svg/footer_profile.svg',
@@ -53,8 +53,8 @@ const LayoutFooter = (props: TLayoutFooter) => {
   };
 
   return (
-    <div className='flex flex-col items-center bg-white text-sm sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl m-auto h-screen overflow-hidden'>
-      <div className='w-full flex-grow overflow-auto'>{props.children}</div>
+    <div className='flex flex-col items-center text-sm sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-screen overflow-hidden'>
+      <div className='w-full flex-grow overflow-auto item'>{props.children}</div>
       <div className='w-full flex justify-evenly items-center py-0.5 px-1 border-t-2 y lg:px-1.5 lg:border-t-4'>
         {footersRef.current.map((f, index) => {
           const isActivated = f.redirect === pathname;

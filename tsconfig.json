@@ -64,18 +64,26 @@
       "@constants": [
         "./src/constants"
       ],
+      "@contexts": [
+        "./src/contexts"
+      ],
+      "@layouts/*": [
+        "./src/layouts/*"
+      ],
     },
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
   },
   "exclude": [
     "./out/**/*",
     "./node_modules/**/*"
   ],
   "include": [
+    "src/interfaces/react-hook-global.d.ts",
+    "src/interfaces/component.d.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",

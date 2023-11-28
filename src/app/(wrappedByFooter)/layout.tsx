@@ -1,7 +1,7 @@
-import '../styles/global.css';
+import { LayoutFooter } from '@layouts/footer';
+import '../../styles/global.css';
 
 import type { Metadata } from 'next';
-import { ThemeProvider } from '@contexts';
 
 export const metadata: Metadata = {
   icons: [
@@ -35,19 +35,7 @@ export default function RootLayout({
 }: {
   children: any;
 }) {
-  return (
-    <html lang='en'>
-      <body>
-        <div className='lower-bg flex justify-center'>
-          <div className='bg-primary'>
-            <div className='h-fit w-fit'>
-              <ThemeProvider>{children}</ThemeProvider>
-            </div>
-          </div>
-        </div>
-      </body>
-    </html>
-  );
+  return <LayoutFooter>{children}</LayoutFooter>;
 }
 
 // Enable edge runtime but you are required to disable the `migrate` function in `src/libs/DB.ts`

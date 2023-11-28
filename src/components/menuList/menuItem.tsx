@@ -1,13 +1,19 @@
+import React from 'react';
+
 type TMenuItemProps = {
   srcIcon: string;
   title: string;
   withBorder?: boolean;
+  onClick?: React.MouseEventHandler<HTMLDivElement>;
 };
 
 const MenuItem = (props: TMenuItemProps) => {
-  const { srcIcon, title, withBorder = true } = props;
+  const { srcIcon, title, withBorder = true, onClick } = props;
   return (
-    <div className={`cursor-pointer flex w-full py-1 items-center ${withBorder ? 'border-b-1' : ''}`}>
+    <div
+      className={`cursor-pointer flex w-full py-1 items-center ${withBorder ? 'border-b-1' : ''}`}
+      onClick={onClick}
+    >
       <div>
         <img src={srcIcon} alt='' />
       </div>

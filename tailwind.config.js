@@ -99,6 +99,10 @@ module.exports = {
         danger: {
           100: '#ee7c7c',
         },
+
+        colors: {
+          primary: 'var(--text-color-primary)',
+        },
       },
       fontFamily: {
         sans: ['Plus Jakarta Display', 'sans-serif'],
@@ -135,6 +139,25 @@ module.exports = {
       borderWidth: {
         1: '1px',
       },
+      textColor: {
+        DEFAULT: {
+          light: '#fff', // Default text color for light mode
+          dark: 'white', // Default text color for dark mode
+        },
+      },
+    },
+    variants: {
+      extend: {
+        textColor: ['pink'], // Enable dark mode variants for text color
+      },
+    },
+    textColor: {
+      primary: 'var(--bg-primary)',
+      secondary: 'var(--color-secondary)',
+    },
+    backgroundColor: {
+      primary: 'var(--bg-primary)',
+      secondary: 'var(--color-secondary)',
     },
   },
   plugins: [],

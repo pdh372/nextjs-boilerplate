@@ -4,9 +4,12 @@ import '@helpers';
 import Image from 'next/image';
 import { MenuList, MenuItem } from '@components';
 import { useRef } from 'react';
+import { useTheme } from '@contexts';
 
 const Profile = () => {
-  const menus = useRef([
+  const { toggleTheme } = useTheme();
+
+  const menus = useRef<React.IProfileMenuItemRef[]>([
     {
       title: 'Account',
       items: [
@@ -43,6 +46,7 @@ const Profile = () => {
         {
           src: '/light/icons/profile_dark_light_mode.png',
           title: 'dark',
+          onClick: toggleTheme,
         },
       ],
     },
@@ -62,7 +66,7 @@ const Profile = () => {
   ]);
 
   return (
-    <div className='px-10 bg-black-10'>
+    <div className='px-10'>
       {/* Shop InFo */}
       <div className='flex flex-row justify-between pt-2 pb-12 items-center h-fit'>
         <div className='cursor-pointer'>
@@ -96,10 +100,11 @@ const Profile = () => {
             <MenuList title={menu.title}>
               {menu.items.map((item, j) => (
                 <MenuItem
+                  onClick={() => item.onClick('dark')}
                   key={j}
                   srcIcon={item.src}
                   title={item.title}
-                  withBorder={item.withBorder}
+                  withBorder={item.withBorder || false}
                 ></MenuItem>
               ))}
             </MenuList>
