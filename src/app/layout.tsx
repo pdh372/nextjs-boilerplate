@@ -1,7 +1,7 @@
 import '../styles/global.css';
 
 import type { Metadata } from 'next';
-import { ThemeProvider } from '@contexts';
+import { ThemeSwitcher } from '@components';
 
 export const metadata: Metadata = {
   icons: [
@@ -38,13 +38,13 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        <div className='lower-bg flex justify-center'>
-          <div className='bg-primary'>
-            <div className='h-fit w-fit'>
-              <ThemeProvider>{children}</ThemeProvider>
+        <ThemeSwitcher>
+          <div className='lower-bg flex justify-center'>
+            <div className='bg-primary'>
+              <div className='h-fit w-fit'>{children}</div>
             </div>
           </div>
-        </div>
+        </ThemeSwitcher>
       </body>
     </html>
   );

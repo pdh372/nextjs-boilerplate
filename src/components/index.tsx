@@ -1,2 +1,2 @@
-export * from './menuList/menuList'
-export * from './theme/themeImage'
+export * from './menuList/menuList';
+export * from './theme';

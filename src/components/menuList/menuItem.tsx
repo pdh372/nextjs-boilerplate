@@ -4,15 +4,15 @@ type TMenuItemProps = {
   srcIcon: string;
   title: string;
   withBorder?: boolean;
-  onClick?: React.MouseEventHandler<HTMLDivElement>;
+  metadata?: any;
 };
 
 const MenuItem = (props: TMenuItemProps) => {
-  const { srcIcon, title, withBorder = true, onClick } = props;
+  const { srcIcon, title, withBorder = true, metadata } = props;
   return (
     <div
       className={`cursor-pointer flex w-full py-1 items-center ${withBorder ? 'border-b-1' : ''}`}
-      onClick={onClick}
+      onClick={metadata?.onClick}
     >
       <div>
         <img src={srcIcon} alt='' />
@@ -20,9 +20,15 @@ const MenuItem = (props: TMenuItemProps) => {
       <div className='flex-grow ml-1'>
         <p className='text-p font-medium'>{title.capitalizeEachWord()}</p>
       </div>
-      <div className=''>
-        <img src='/light/icons/profile_left_arrow.png' alt='' />
-      </div>
+
+      {/* arrow icon */}
+      {metadata?.arrowIcon ? (
+        metadata.arrowIcon
+      ) : (
+        <div className=''>
+          <img src='/light/icons/profile_left_arrow.png' alt='' />
+        </div>
+      )}
     </div>
   );
 };

@@ -5,9 +5,9 @@ declare namespace React {
       src: string;
       title: string;
       withBorder?: boolean;
-      onClick?: React.MouseEventHandler<T>;
+      metadata?: any;
     }[];
   }
-} 
+}
 
 // export {};

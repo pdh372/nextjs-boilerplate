@@ -4,66 +4,32 @@ import '@helpers';
 import Image from 'next/image';
 import { MenuList, MenuItem } from '@components';
 import { useRef } from 'react';
-import { useRouter } from 'next/navigation';
-
+import { COLOR_MODE, GLOBAL_DATA, LOCAL_STORAGE } from '@constants';
 const Profile = () => {
-  const router = useRouter();
+  const handleColorMode = (theme: string) => {
+    localStorage.setItem(LOCAL_STORAGE.COLOR_MODE, theme);
+    document.documentElement.setAttribute(GLOBAL_DATA.THEME, theme);
+  };
 
   const menus = useRef<React.IProfileMenuItemRef[]>([
     {
-      title: 'Account',
+      title: 'Mode',
       items: [
         {
           src: '/light/icons/profile_order.png',
-          title: 'orders',
+          title: 'dark',
+          metadata: {
+            arrowIcon: <div></div>,
+            onClick: () => handleColorMode(COLOR_MODE.DARK),
+          },
         },
         {
           src: '/light/icons/profile_return.png',
-          title: 'returns',
-        },
-        {
-          src: '/light/icons/profile_wishlist.png',
-          title: 'wishlist',
-        },
-        {
-          src: '/light/icons/profile_address.png',
-          title: 'addresses',
-          withBorder: false,
-        },
-      ],
-    },
-    {
-      title: 'Settings',
-      items: [
-        {
-          src: '/light/icons/profile_language.png',
-          title: 'languages',
-        },
-        {
-          src: '/light/icons/profile_location.png',
-          title: 'locations',
-        },
-        {
-          src: '/light/icons/profile_dark_light_mode.png',
-          title: 'dark',
+          title: 'light',
           metadata: {
-            onClick: () => {
-              router.push('profile/color-mode');
-            },
+            arrowIcon: <div></div>,
+            onClick: () => handleColorMode(COLOR_MODE.LIGHT),
           },
-        },
-      ],
-    },
-    {
-      title: 'Help & Support',
-      items: [
-        {
-          src: '/light/icons/profile_help.png',
-          title: 'get help',
-        },
-        {
-          src: '/light/icons/profile_faq.png',
-          title: 'FAQ',
         },
       ],
     },
@@ -114,14 +80,6 @@ const Profile = () => {
             </MenuList>
           </div>
         ))}
-      </div>
-
-      {/* Logout */}
-      <div className='flex mt-2 pt-1 pb-2 cursor-pointer'>
-        <div>
-          <img src='/light/icons/profile_logout.png' alt='' />
-        </div>
-        <div className='pl-1 text-danger-100 font-semibold'>Log out</div>
       </div>
     </div>
   );

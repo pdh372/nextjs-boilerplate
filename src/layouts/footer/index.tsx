@@ -57,7 +57,8 @@ const LayoutFooter = (props: TLayoutFooter) => {
       <div className='w-full flex-grow overflow-auto item'>{props.children}</div>
       <div className='w-full flex justify-evenly items-center py-0.5 px-1 border-t-2 y lg:px-1.5 lg:border-t-4'>
         {footersRef.current.map((f, index) => {
-          const isActivated = f.redirect === pathname;
+          const isActivated = new RegExp(`^${f.redirect}`).test(pathname);
+
           return (
             <div
               key={index}
